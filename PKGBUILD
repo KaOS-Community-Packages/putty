@@ -1,6 +1,6 @@
 pkgname=putty-svn
 _svnname=putty
-pkgver=9835      
+pkgver=10297      
 pkgrel=1
 pkgdesc="A client program for the SSH, Telnet and Rlogin network protocols"
 arch=('x86_64')
