@@ -1,6 +1,6 @@
 pkgname=putty-svn
 pkgver=10297      
-pkgrel=1
+pkgrel=2
 pkgdesc="A client program for the SSH, Telnet and Rlogin network protocols"
 arch=('x86_64')
 url="http://www.chiark.greenend.org.uk/~sgtatham/putty"
