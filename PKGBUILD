@@ -8,8 +8,6 @@ url="http://www.chiark.greenend.org.uk/~sgtatham/putty"
 license=('MIT')
 depends=('gtk2')
 makedepends=('subversion' 'zip')
-conficts=('putty')
-provides=('putty')
 source=('svn://svn.tartarus.org/sgt/putty')
 md5sums=('SKIP')
 
