@@ -1,20 +1,21 @@
 pkgname=putty
-pkgver=0.67
+pkgver=0.70
 pkgrel=1
 pkgdesc="A client program for the SSH, Telnet and Rlogin network protocols"
 arch=('x86_64')
 url="http://www.chiark.greenend.org.uk/~sgtatham/putty"
 license=('MIT')
-depends=('gtk2')
+depends=('gtk3')
 source=("http://the.earth.li/~sgtatham/putty/latest/${pkgname}-${pkgver}.tar.gz"
         "putty.png"
         "putty.desktop")
-md5sums=('SKIP'
+md5sums=('79ea4d468c5e43740d5c8d94f12af19c'
          '568bbb54c70d12c7bb9f8d6379068b38'
          'd0d073175dc1f3ee73c1e93a4cfe1ad8')
 
 build() {
     cd ${pkgname}-${pkgver}/unix
+    sed -i -e 's/-Werror//g' ../configure Makefile.ux Makefile.gtk
     ./configure --prefix=/usr
     make
 }
