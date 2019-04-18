@@ -1,5 +1,5 @@
 pkgname=putty
-pkgver=0.70
+pkgver=0.71
 pkgrel=1
 pkgdesc="A client program for the SSH, Telnet and Rlogin network protocols"
 arch=('x86_64')
@@ -9,7 +9,7 @@ depends=('gtk3')
 source=("http://the.earth.li/~sgtatham/putty/latest/${pkgname}-${pkgver}.tar.gz"
         "putty.png"
         "putty.desktop")
-md5sums=('79ea4d468c5e43740d5c8d94f12af19c'
+md5sums=('1a32daf7c2acfac09479120140189d98'
          '568bbb54c70d12c7bb9f8d6379068b38'
          'd0d073175dc1f3ee73c1e93a4cfe1ad8')
 
